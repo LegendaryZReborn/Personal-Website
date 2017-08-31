@@ -5,7 +5,7 @@ A website to display my personal projects and information about me.
 The website has a few sections:
 
 * Home
-> Working on highlighting or showcasing a few of my projects here    
+> Working on highlighting or showcasing a few of my projects here.
 * Resume
 > My currently most up to date resume details are here.    
 * About
