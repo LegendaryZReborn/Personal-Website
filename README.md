@@ -11,4 +11,4 @@ The website has a few sections:
 * About
 > Informs visitors on a little bit about me: who I am, where I am going, etc.   
 * Blog
-...Working on my own personal blog from scratch so as to develop the skills to create one.
+>Working on my own personal blog from scratch so as to develop the skills to create one.
