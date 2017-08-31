@@ -1,0 +1,310 @@
+html
+{
+	height: 100%;
+}
+body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: rgba(24, 81, 150, 0.8);
+}
+
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin:auto;
+    width: 80%;
+	min-height: 100%;
+    background-color: transparent;
+}
+
+
+
+.flex-item1 {
+	display: flex;
+	flex-direction: column;
+	min-height: 150px;
+	max-height: 200px;
+	background: white;
+}
+
+.flex-item2 {
+    background-color: rgba(24, 81, 150, 1.0);
+	box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	height: auto;	
+	padding: 5px;
+	margin-top: auto;
+	color: white; 
+	font-family: helvetica;
+	text-align: center;
+}
+
+.flex-main{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+    background-color: white;
+	margin: 0px;
+	padding: 5px;
+	box-sizing: border-box;
+	flex: 1;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	flex: 1;
+	box-sizing: border-box;	
+	padding-top: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: url("images/christmas.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.header-logo
+{
+
+	box-sizing: border-box;
+	margin-top: auto;
+	font-family: Segoe UI;
+	font-size: 48px;
+	font-weight: bold;
+	text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+	color: #1851b2;
+
+	/*For a gradiant color on the text*/
+	background: -webkit-linear-gradient(-90deg, #7caeff, #1851b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+
+header a
+{
+	display: block;
+	text-decoration: none;
+}
+
+.personal-label
+{
+	box-sizing: border-box;
+	margin-top: auto;
+	font-family: Century Gothic;
+	font-size: 32px;
+	font-weight: bold;
+	color: #1851b2;
+	/*For gradient color on text*/
+	background: -webkit-linear-gradient(-90deg, #adccff, #1851b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* NAVIGATION*/
+
+.main-nav
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color: rgba(24, 81, 150, 1.0);
+	flex: 1;
+	
+}
+
+#rightButton
+{
+	box-sizing: border-box;
+	margin-right: 10px;
+	margin-left: auto;
+}
+.nav-button
+{
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+
+.nav-button a, .nav-button a:link
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	font-family: helvetica;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.nav-button a:hover
+{
+	color: white;
+	background-color: rgba(71, 144, 255, 0.7);
+	
+}
+
+.main-info
+{
+	margin: auto;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: left;
+	color: black; 
+	font-family: helvetica;
+	background-color: transparent;
+	overflow: auto;
+}
+
+.main-section
+{
+	width: 90%;
+	margin: auto;
+	color: black;
+	font-family: verdana;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+.main-blog
+{
+	width: 75%;
+	margin: 20px 5px 20px 20px;
+	padding: 0px 20px 0px 0px;
+	color: black;
+	font-family: verdana;
+	font-size: 20px;
+	box-sizing: border-box;
+	border-right: 1px solid lightgrey;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.side-section
+{
+	width: 25%;
+	margin: 20px 20px 20px 0px;
+	font-family: verdana;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+.main-section h2
+{
+	text-decoration: underline;
+	font-family: courier new;
+}
+
+.main-blog h2
+{
+	font-family: courier new;
+}
+
+form
+{
+	color: white;
+	background-color: rgba(56, 96, 165, 0.5);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+ul.about-list
+{
+	list-style: none;
+}
+
+ul.about-list li
+{
+	margin-bottom: 10px;
+}
+
+.profile-image
+{
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin-left: 10px;
+	margin-right: 20px;
+
+}
+
+@media screen and (max-width: 1000px){
+
+	.flex-container
+	{
+		width: 100%;
+	}
+	
+	header
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+	
+}
+
+
+@media screen and (max-width: 650px){
+	
+	.profile-image
+	{
+		float: none;
+		width: 180px;
+		height: 180px;
+		display: block;
+		margin: auto;
+	}
+	
+	.main-section
+	{
+		width: 100%;
+		margin: auto;
+		padding: 10px;
+		color: black;
+		text-align: center;
+	}
+	
+	.main-blog
+	{
+		width: 100%;
+		margin: auto;
+		padding: 10px;
+		box-sizing: border-box;
+		color: black;
+		font-family: verdana;
+		font-size: 20px;
+	}
+
+	
+	.side-section
+	{
+		display: none;		
+	}
+}
+
+@media screen and (max-width: 450px){
+	
+	.personal-label
+	{
+		font-size: 24px;
+	}
+	
+	.header-logo
+	{
+		font-size: 28px;
+	}
+}
