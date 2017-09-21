@@ -38,11 +38,12 @@
 		</header>	
 	
 		<nav class="main-nav">		
-			<div class="nav-button"><a href="index.html">Home</a></div>
-			<div class="nav-button"><a href="resume.html">Resume</a></div>
-			<div class="nav-button" ><a href="about.html">About</a></div>	
-			<div class="nav-button" id="rightButton"><a href="blog.php">Blog</a></div>				
-		</nav>
+		<div class="nav-button"><a href="index.html">Home</a></div>
+		<div class="nav-button"><a href="resume.html">Resume</a></div>
+		<div class="nav-button"><a href="projects.html">Projects</a></div>			
+		<div class="nav-button" ><a href="about.html">About</a></div>	
+		<div class="nav-button" id="rightButton"><a href="blog.php">Blog</a></div>				
+	</nav>
 
 		
   </div>
@@ -63,7 +64,7 @@
 						
 						<p> {$retrievedPosts[$j]->getPostContent()} </p> 
 
-						<form method='post' action='delete_posts.php'>
+						<form class='delete_form' method='post' action='delete_posts.php'>
 							<input type='hidden' name='id' value='{$retrievedPosts[$j]->getPostID()}'>
 							<input type='submit' value='delete'>
 						</form>

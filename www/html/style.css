@@ -1,4 +1,9 @@
+*
+{
+	box-sizing: border-box;
+}
 html
+
 {
 	height: 100%;
 }
@@ -19,11 +24,12 @@ body
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
 	flex-direction: column;
-	box-sizing: border-box;
 	margin:auto;
     width: 80%;
 	min-height: 100%;
-    background-color: transparent;
+	background-color: transparent;
+	box-shadow: 0px 0px 50px rgb(32, 32, 32);
+	
 }
 
 
@@ -39,7 +45,6 @@ body
 .flex-item2 {
     background-color: rgba(24, 81, 150, 1.0);
 	box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
-	box-sizing: border-box;
 	height: auto;	
 	padding: 5px;
 	margin-top: auto;
@@ -55,7 +60,6 @@ body
     background-color: white;
 	margin: 0px;
 	padding: 5px;
-	box-sizing: border-box;
 	flex: 1;
 }
 
@@ -63,8 +67,7 @@ header
 {
 	display: flex;
 	justify-content: space-between;
-	flex: 1;
-	box-sizing: border-box;	
+	flex: 1;	
 	padding-top: 35px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -74,8 +77,6 @@ header
 
 .header-logo
 {
-
-	box-sizing: border-box;
 	margin-top: auto;
 	font-family: Segoe UI;
 	font-size: 48px;
@@ -100,7 +101,7 @@ header a
 
 .personal-label
 {
-	box-sizing: border-box;
+	
 	margin-top: auto;
 	font-family: Century Gothic;
 	font-size: 32px;
@@ -121,20 +122,18 @@ header a
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	background-color: rgba(24, 81, 150, 1.0);
+	background-color: rgba(24, 81, 150, 0.8);
 	flex: 1;
 	
 }
 
 #rightButton
-{
-	box-sizing: border-box;
+{	
 	margin-right: 10px;
 	margin-left: auto;
 }
 .nav-button
-{
-	box-sizing: border-box;
+{	
 	margin-left: 10px;
 }
 
@@ -146,7 +145,7 @@ header a
 	height: 100%;
 	font-family: helvetica;
 	padding: 10px;
-	box-sizing: border-box;
+	
 }
 .nav-button a:hover
 {
@@ -159,7 +158,6 @@ header a
 {
 	margin: auto;
 	width: 100%;
-	box-sizing: border-box;
 	padding: 20px;
 	text-align: left;
 	color: black; 
@@ -175,7 +173,7 @@ header a
 	color: black;
 	font-family: verdana;
 	font-size: 20px;
-	box-sizing: border-box;
+	
 }
 
 .main-blog
@@ -186,9 +184,7 @@ header a
 	color: black;
 	font-family: verdana;
 	font-size: 20px;
-	box-sizing: border-box;
 	border-right: 1px solid lightgrey;
-	box-sizing: border-box;
 	overflow: hidden;
 }
 
@@ -198,13 +194,14 @@ header a
 	margin: 20px 20px 20px 0px;
 	font-family: verdana;
 	font-size: 20px;
-	box-sizing: border-box;
+	
 }
 
 .main-section h2
 {
 	text-decoration: underline;
 	font-family: courier new;
+	text-align: center;
 }
 
 .main-blog h2
@@ -212,10 +209,10 @@ header a
 	font-family: courier new;
 }
 
-form
+.delete_form
 {
 	color: white;
-	background-color: rgba(56, 96, 165, 0.5);
+	background-color: rgba(24, 81, 150, 0.8); 
 	border-radius: 10px;
 	padding: 20px;
 }
@@ -244,8 +241,54 @@ ul.about-list li
 {
 	margin: 10px 5px;
 	padding: 10px;
-	box-sizing: border-box;
+	
 	border-bottom: 1px solid black;
+}
+
+.project
+{
+	border: 1px solid black;
+	margin: 10px 5px;
+	padding: 0px;
+	max-height: 1000px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: rgb(33, 33, 33);
+	color: white;
+}
+
+.project h2
+{
+	margin: 0px;
+	background: rgb(223, 73, 0);
+	text-decoration: none;
+}
+
+.project h2 a:link, .project h2 a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+
+.project h2 a:hover
+{
+	cursor: pointer;
+	text-decoration: underline;
+	
+}
+
+.project_img
+{
+	 width: 300px;
+	 margin: auto;
+	 margin-top: 20px;
+}
+
+.project_description
+{
+	width: 80%;
+	margin: auto;
 }
 
 @media screen and (max-width: 1000px){
@@ -291,7 +334,7 @@ ul.about-list li
 		width: 100%;
 		margin: auto;
 		padding: 10px;
-		box-sizing: border-box;
+		
 		color: black;
 		font-family: verdana;
 		font-size: 20px;
