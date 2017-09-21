@@ -5,14 +5,21 @@ class Post
 		private $postDate;
 		private $postContent;
 		private $postAuthor;
+		private $postID;
 
 		
-		function __construct($title, $author, $date, $post)
+		function __construct($id, $title, $author, $date, $post)
 		{
+			$this->postID = $id;
 			$this->postTitle = $title;
 			$this->postAuthor = $author;
 			$this->postDate = $date;
 			$this->postContent = $post;
+		}
+		
+		function getPostID()
+		{
+			return $this->postID;
 		}
 		
 		function getPostTitle()

@@ -1,7 +1,7 @@
 <?php
 	
 	$hn = 'localhost';
-	$db = 'posts';
+	$db = 'blog';
 	$un = 'username';
 	$pw = 'password';
 

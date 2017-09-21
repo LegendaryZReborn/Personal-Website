@@ -27,6 +27,7 @@
 		/*close connection with mysql*/
 		$conn->close();
 		
+		header("Location: blog.php");
 	}
 			
 ?>

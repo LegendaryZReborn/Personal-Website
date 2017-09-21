@@ -240,6 +240,14 @@ ul.about-list li
 
 }
 
+.b_post
+{
+	margin: 10px 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+}
+
 @media screen and (max-width: 1000px){
 
 	.flex-container

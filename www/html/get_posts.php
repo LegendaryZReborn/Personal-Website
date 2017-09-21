@@ -21,12 +21,13 @@
 	{
 		$result->data_seek($i);
 		$row = $result->fetch_array(MYSQLI_ASSOC);
+		$id = $row['id'];
 		$title = $row['title'];
 		$author = $row['author'];
 		$date = $row['date'];
 		$post = $row['post'];
 		
-		$nPost = new Post($title, $author, $date, $post);
+		$nPost = new Post($id,$title, $author, $date, $post);
 		array_push($retrievedPosts, $nPost);
 	}		
 ?>

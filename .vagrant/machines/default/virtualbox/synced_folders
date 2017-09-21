@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www":{"guestpath":"/var/www","hostpath":"C:/Users/legen/Documents/GitHub/Personal-Website/www","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/legen/Documents/GitHub/Personal-Website","disabled":false,"__vagrantfile":true}}}
