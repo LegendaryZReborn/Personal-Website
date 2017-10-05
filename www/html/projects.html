@@ -31,35 +31,48 @@
   <!-- Main Body Div -->
 	<div class="flex-main">
 		<div class="main-section">
-
+	
 			<div class="project">
 				<h2><a href="https://github.com/LegendaryZReborn/Interactive-3D-Graphics/tree/master/Island_Project_CodeBlocks">Interactive Computer Graphics - Island Temple Rendering</a></h2>
-				<div class="project_img"><img src="images/graphics_island_collage_s.png" width="300px" height="200px"></div>
+				<div class="project_img"><img src="images/graphics_island_collage.png" onclick="show_modal(this)" width="300px" height="200px"></div>
 				<div class="project_description">
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
+					<ul>
+						<li>Created simple model viewer (Using OpenGL with C++, GLUT, ANGEL library).</li>
+						<li>Terrain rendering from a height map with water simulation around it. </li>
+						<li>Implemented a flying camera for first person exploration.</li> 
+					</ul>
 				</div>				
 			</div>
 
 			<div class="project">
-				<h2>Fast Fourier Transform</h2>
-				<div class="project_img"><img src="images/No_image_available.svg" width="300px" height="200px"></div>
+				<h2><a href="https://github.com/LegendaryZReborn/FFT">Fast Fourier Transform</a></h2>
+				<div class="project_img"><img src="images/fft.png" onclick="show_modal(this)" width="300px" height="200px"></div>
 				<div class="project_description">
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
+					<ul>
+						<li>Implemented the <strong>Fast Fourier Transform</strong> in <strong>C</strong> and in <strong>Cuda</strong><strong> C</strong>.</li>
+						<li>The Goal was to measure the improvement in efficiency achieved from implementing the radix-2 DIT case in <strong>C</strong><strong>uda</strong>.</li>
+						<li>The code was compiled and executed on Texas Advanced Computing Center&rsquo;s Maverick with 132 NVIDIA Tesla K40 GPUs.</li>
+					</ul>
 				</div>	
 			</div>
 
 			<div class="project">
 				<h2><a href="projects/BrickBreaker/brick_breaker.html">Brick Breaker Game</a></h2>
-				<div class="project_img"><img src="images/brick_breaker_s.png" alt="Brick Breaker Image" width="300px" height="200px"></div>
+				<div class="project_img"><img src="images/brick_breaker.png" onclick="show_modal(this)" alt="Brick Breaker Image" width="300px" height="200px"></div>
 				<div class="project_description">
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
-					<p>Nulla nisi proident veniam est. Elit adipisicing Lorem consequat deserunt quis id elit velit. Magna Lorem sit sint quis nisi non. Duis enim incididunt consectetur in magna est. </p>
+					<ul>
+						<li>Developed a 2D brick breaker game with different levels in <strong>Unity 3D</strong> using <strong>C#</strong> scripts.</li>
+						<li>Published on the Google Play App Store</li>
+						<li><a href="https://play.google.com/store/apps/details?id=com.LegendZ.BrickBreaker&hl=en">Click Here for the Game</a></li>
+					</ul>
 				</div>
+			</div>
+
+			<div id="modal">
+					<span id="close" onclick="close_modal()">&#9932</span>					
+					<div id="modal-content">
+						<img id="modal-img" src= "images/No_image_available.svg" alt = "Modal Image" width="800px" height="400px">
+					</div>
 			</div>
 
 		</div>
@@ -73,5 +86,6 @@
 	</div>  
 </div>
 
+<script src="scripts/modal.js"></script>
 </body>
 </html>

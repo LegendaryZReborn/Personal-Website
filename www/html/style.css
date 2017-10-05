@@ -27,8 +27,10 @@ body
 	margin:auto;
     width: 80%;
 	min-height: 100%;
-	background-color: transparent;
+	background-color: white;
 	box-shadow: 0px 0px 50px rgb(32, 32, 32);
+	font-family: arial;
+	font-size: 16px;
 	
 }
 
@@ -43,24 +45,21 @@ body
 }
 
 .flex-item2 {
-    background-color: rgba(24, 81, 150, 1.0);
+	background-color: rgba(24, 81, 150, 0.8);
 	box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
 	height: auto;	
 	padding: 5px;
 	margin-top: auto;
 	color: white; 
-	font-family: helvetica;
 	text-align: center;
 }
 
 .flex-main{
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-    background-color: white;
-	margin: 0px;
-	padding: 5px;
 	flex: 1;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
 }
 
 header
@@ -154,26 +153,20 @@ header a
 	
 }
 
-.main-info
+.slim-section
 {
-	margin: auto;
-	width: 100%;
+	width: 70%;
 	padding: 20px;
-	text-align: left;
-	color: black; 
-	font-family: helvetica;
-	background-color: transparent;
-	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .main-section
 {
 	width: 90%;
+	padding: 20px;
 	margin: auto;
 	color: black;
-	font-family: verdana;
-	font-size: 20px;
-	
 }
 
 .main-blog
@@ -182,22 +175,18 @@ header a
 	margin: 20px 5px 20px 20px;
 	padding: 0px 20px 0px 0px;
 	color: black;
-	font-family: verdana;
-	font-size: 20px;
 	border-right: 1px solid lightgrey;
 	overflow: hidden;
 }
 
 .side-section
 {
+	align-self: flex-start;
 	width: 25%;
 	margin: 20px 20px 20px 0px;
-	font-family: verdana;
-	font-size: 20px;
-	
 }
 
-.main-section h2
+.main-section h2, .slim-section h2
 {
 	text-decoration: underline;
 	font-family: courier new;
@@ -207,6 +196,12 @@ header a
 .main-blog h2
 {
 	font-family: courier new;
+}
+
+.sign-in
+{
+	display: block;
+	background: white;
 }
 
 .delete_form
@@ -258,14 +253,14 @@ ul.about-list li
 	color: white;
 }
 
-.project h2
+.project h2, .project a
 {
 	margin: 0px;
 	background: rgb(223, 73, 0);
 	text-decoration: none;
 }
 
-.project h2 a:link, .project h2 a:visited
+.project a:link, .project a:visited
 {
 	color: white;
 	text-decoration: none;
@@ -291,6 +286,80 @@ ul.about-list li
 	margin: auto;
 }
 
+#modal
+{
+	display: none;
+	position: fixed;
+	top: 0; 
+	left:0;
+	z-index: 1;	
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.40);
+	overflow: auto;
+}
+
+#modal-content
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto; 
+	max-width: 800px;
+	max-height: 400px;
+}
+
+#modal-img
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+
+#close
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: white;
+	font-size: 35px;
+	z-index: 2;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+
+#close:hover
+{
+	cursor: pointer;
+	color: #A2A2A2;
+}
+
+#modal-content, #close
+{
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.5s;
+	animation-name: zoom;
+	animation-duration: 0.5s;
+}
+
+
+@-webkit-keyframes zoom
+{
+	from {-webkit-transform: scale(0)}
+	to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom
+{
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
+
 @media screen and (max-width: 1000px){
 
 	.flex-container
@@ -307,7 +376,6 @@ ul.about-list li
 	}
 	
 }
-
 
 @media screen and (max-width: 650px){
 	
@@ -333,11 +401,9 @@ ul.about-list li
 	{
 		width: 100%;
 		margin: auto;
-		padding: 10px;
-		
+		padding: 10px;	
 		color: black;
-		font-family: verdana;
-		font-size: 20px;
+		border: none;
 	}
 
 	

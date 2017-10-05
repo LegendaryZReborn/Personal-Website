@@ -29,29 +29,25 @@
   
   <!-- Main Body Div -->
 	<div class="flex-main">
-		<div class="main-section">
-			<h2>About me</h2>
+		<div class="slim-section">
+			<h2>Paving the Way To the Future</h2>
 			
-			<img class="profile-image" src="images/Megumin_Intrigued.jpg">
+			<img class="profile-image" src="images/profile_pic.jpg" onclick="show_modal(this)">
 			
-			<ul class="about-list">
-				<li>Name: Cavaughn Browne</li>
-				<li>Universtiy: Midwestern State Universtiy</li>
-				<li>Major: Computer Science</li>
-				<li>Hobbies and Interests: Coding, Video Games, Art</li>
-				<li>Email: cxbrowne1207@gmail.com</li>
-			</ul>
+			<p>	Cavaughn Browne is a student of the Midwestern State University looking for a job as a 
+				Software Engineer or Developer. He was born on the island of Antigua on December 7th 1996.
+				and grew to have a profound interest in computers. Therefore, he is pursuing a Bachelor's 
+				of Science degree in Computer Science and will graduate in May 2018. His top area's of 
+				interest in the field are Computer Graphics, High Perfomance Computing, and Computer Vision. 
+			</p>
 			
-			<br />
-			
-			<p>A forward thinking individual who always puts his best into any task he is given.</p>
-			
-			<p>
-			I am an efficient and quick learner who is also well rounded. Throughout my life and college
-			career, I've recognized the importance of extra curricular activities in the community and in 
-			shaping one's character and work habits in addition to academics. As a result, I have undertaken 
-			leadership roles and various volunteering activities to further build myself while simultaneously 
-			giving back to the community which I owe so much to.</p>
+
+			<div id="modal">
+				<span id="close" onclick="close_modal()">&#9932</span>					
+				<div id="modal-content">
+					<img id="modal-img" src= "images/No_image_available.svg" alt = "Modal Image" width="400px" height="400px">
+				</div>
+			</div>
 			
 		</div>
 	
@@ -64,5 +60,6 @@
 	</div>  
 </div>
 
+<script src="scripts/modal.js"></script>
 </body>
 </html>
