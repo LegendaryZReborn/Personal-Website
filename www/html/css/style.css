@@ -13,7 +13,6 @@ body
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	background: rgba(24, 81, 150, 0.8);
 }
 
 
@@ -25,10 +24,10 @@ body
     flex-wrap: nowrap;
 	flex-direction: column;
 	margin:auto;
-    width: 80%;
+    width: 100%;
 	min-height: 100%;
+	overflow: hidden;
 	background-color: white;
-	box-shadow: 0px 0px 50px rgb(32, 32, 32);
 	font-family: arial;
 	font-size: 16px;
 	
@@ -46,7 +45,6 @@ body
 
 .flex-item2 {
 	background-color: rgba(24, 81, 150, 0.8);
-	box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
 	height: auto;	
 	padding: 5px;
 	margin-top: auto;
@@ -59,6 +57,10 @@ body
 	flex: 1;
 	flex-direction: row;
 	align-items: center;
+	border-left: 1px solid #D4D4D4;
+	border-right: 1px solid #D4D4D4;
+	border-top: 1px solid #0B3A6E;
+	border-bottom: 1px solid #0B3A6E;
 	padding: 20px;
 }
 
@@ -70,7 +72,7 @@ header
 	padding-top: 35px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background: url("images/christmas.jpg") no-repeat center center;
+	background: url("../images/christmas.jpg") no-repeat center center;
 	background-size: cover;
 }
 
@@ -121,6 +123,7 @@ header a
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	position: relative;
 	background-color: rgba(24, 81, 150, 0.8);
 	flex: 1;
 	
@@ -128,8 +131,8 @@ header a
 
 #rightButton
 {	
-	margin-right: 10px;
-	margin-left: auto;
+	position: absolute;
+	right: 10px;
 }
 .nav-button
 {	
@@ -253,7 +256,7 @@ ul.about-list li
 	color: white;
 }
 
-.project h2, .project a
+.project h2
 {
 	margin: 0px;
 	background: rgb(223, 73, 0);
@@ -420,6 +423,15 @@ ul.about-list li
 		font-size: 24px;
 	}
 	
+	.flex-container
+	{
+		overflow: hidden;
+	}
+	.main-nav
+	{
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
 	.header-logo
 	{
 		font-size: 28px;
