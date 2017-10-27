@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Cavaughn's Personal</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
 			<div class="nav-button"><a href="resume.html">Resume</a></div>
 			<div class="nav-button"><a href="projects.html">Projects</a></div>			
 			<div class="nav-button" ><a href="about.html">About</a></div>	
-			<div class="nav-button" id="rightButton"><a href="blog.php">Blog</a></div>				
+			<div class="nav-button" id="rightButton"><a href="empty_blog.html">Blog</a></div>				
 		</nav>
 
 		
@@ -32,6 +32,8 @@
 	<div class="flex-main">
 		<div class="main-section">
 	
+			<h2>Projects</h2>
+
 			<div class="project">
 				<h2><a href="https://github.com/LegendaryZReborn/Interactive-3D-Graphics/tree/master/Island_Project_CodeBlocks">Interactive Computer Graphics - Island Temple Rendering</a></h2>
 				<div class="project_img"><img src="images/graphics_island_collage.png" onclick="show_modal(this)" width="300px" height="200px"></div>
@@ -63,10 +65,21 @@
 					<ul>
 						<li>Developed a 2D brick breaker game with different levels in <strong>Unity 3D</strong> using <strong>C#</strong> scripts.</li>
 						<li>Published on the Google Play App Store</li>
-						<li><a href="https://play.google.com/store/apps/details?id=com.LegendZ.BrickBreaker&hl=en">Click Here for the Game</a></li>
+						<li><a style="color: rgb(223, 73, 0);" href="https://play.google.com/store/apps/details?id=com.LegendZ.BrickBreaker&hl=en">Click Here for the Game</a></li>
 					</ul>
 				</div>
 			</div>
+
+			<div class="project">
+					<h2><a href="projects/Super Diamond Box/index.html">Phaser Super Diamond Box Game</a></h2>
+					<div class="project_img"><img src="images/super_diamond_box.png" onclick="show_modal(this)" alt="Brick Breaker Image" width="300px" height="200px"></div>
+					<div class="project_description">
+						<ul>
+							<li>Developed web page games using the Phaser <strong>HTML5</strong> 2D game framework & <strong>Javascript</strong>.</li>
+							<li>Configured for play on mobile devices.</li>
+						</ul>
+					</div>
+				</div>
 
 			<div id="modal">
 					<span id="close" onclick="close_modal()">&#9932</span>					
